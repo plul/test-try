@@ -1,0 +1,15 @@
+[package]
+name = "test-try-macros"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+syn = { version = "2", features = ["full"] }
+quote = { version = "1" }
+proc-macro2 = { version = "1" }
+
+[lib]
+proc-macro = true
+
+[lints]
+workspace = true

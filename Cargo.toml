@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+
+members = ["crates/test-try", "crates/test-try-macros"]
+
+[workspace.package]
+edition = "2021"
+
+[workspace.lints.rust]
+future_incompatible = { level = "deny", priority = -1 }
+nonstandard_style = { level = "deny", priority = -1 }
+rust_2018_idioms = { level = "deny", priority = -1 }
+missing_docs = "warn"
+missing_debug_implementations = "warn"
+
+[patch.crates-io]
+test-try-macros = { path = "crates/test-try-macros" }

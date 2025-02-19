@@ -2,6 +2,13 @@
 
 An alternative to Rust's `#[test]` macro for writing unit tests.
 
+## Usage
+
+```toml
+[dependencies]
+test-try = "0.1"
+```
+
 ## Introduction
 
 Rust unit test typically handle errors by unwrapping or by returning a result with a boxed error:

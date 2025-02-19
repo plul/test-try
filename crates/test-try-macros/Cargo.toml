@@ -1,7 +1,15 @@
 [package]
 name = "test-try-macros"
-version = "0.1.0"
+description = "An alternative to Rust's `#[test]` macro for writing unit tests."
+authors.workspace = true
+version.workspace = true
 edition.workspace = true
+readme.workspace = true
+license.workspace = true
+publish = true
+homepage = "https://github.com/plul/test-try"
+repository = "https://github.com/plul/test-try"
+documentation = "https://docs.rs/test-try"
 
 [dependencies]
 syn = { version = "2", features = ["full"] }

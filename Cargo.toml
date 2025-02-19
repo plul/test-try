@@ -4,7 +4,12 @@ resolver = "2"
 members = ["crates/test-try", "crates/test-try-macros"]
 
 [workspace.package]
+authors = ["Asger Juul Brunshøj"]
+version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/plul/test-try"
 
 [workspace.lints.rust]
 future_incompatible = { level = "deny", priority = -1 }
